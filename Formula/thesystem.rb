@@ -15,6 +15,9 @@ class Thesystem < Formula
     libexec.install "lima"
     libexec.install "package.json"
 
+    # Ensure entry point is executable
+    chmod 0755, libexec/"cli.js"
+
     # Install node_modules in libexec
     cd libexec do
       system "npm", "install", "--omit=dev", "--no-package-lock"
