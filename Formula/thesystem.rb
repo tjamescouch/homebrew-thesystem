@@ -8,7 +8,7 @@ class Thesystem < Formula
   sha256 "de70c74fd6a23100730503b50bcddac00c2f798f4b6f7324b4fd53f2f1fc9982"
 
   depends_on "lima"
-  depends_on "node@20"
+  depends_on "node"
 
   def install
     libexec.install Dir["dist/*"]
@@ -21,7 +21,7 @@ class Thesystem < Formula
     end
 
     (bin/"thesystem").write_env_script libexec/"cli.js", {
-      PATH: "#{Formula["node@20"].opt_bin}:#{HOMEBREW_PREFIX}/bin:#{ENV["PATH"]}",
+      PATH: "#{Formula["node"].opt_bin}:#{HOMEBREW_PREFIX}/bin:#{ENV["PATH"]}",
       THESYSTEM_LIMA_TEMPLATE: "#{libexec}/lima/thesystem.yaml",
     }
   end
