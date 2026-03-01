@@ -5,7 +5,7 @@ class Thesystem < Formula
   version   "0.2.1"
 
   url "https://github.com/tjamescouch/TheSystem/releases/download/v0.2.1/thesystem-0.2.1.tar.gz"
-  sha256 "cc9fa34b28acbe2a8c4e7c66d853916a3c35246dcaee335f9f04cabffff53c67"
+  sha256 "976561b38129a3761eef16839aeaf06c68e7e0a940e0dee9275a35f37456371b"
 
   depends_on "lima"
   depends_on "node"
