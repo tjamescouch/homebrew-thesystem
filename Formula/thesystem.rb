@@ -2,10 +2,10 @@ class Thesystem < Formula
   desc      "Install it and you have a dev shop"
   homepage  "https://github.com/tjamescouch/TheSystem"
   license   "MIT"
-  version   "0.2.7"
+  version   "0.2.8"
 
-  url "https://github.com/tjamescouch/TheSystem/releases/download/v0.2.7/thesystem-0.2.7.tar.gz"
-  sha256 "f832fd963c1d40f19ede932855d83b1db9778a3fab7480580cd4faded62b6ca9"
+  url "https://github.com/tjamescouch/TheSystem/releases/download/v0.2.8/thesystem-0.2.8.tar.gz"
+  sha256 "e34faeb13c0ada0a75e163024665e2a29cffc870985fe3fbe3aa7f8f353e97e0"
 
   depends_on "lima"
   depends_on "node"
